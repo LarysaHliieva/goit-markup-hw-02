@@ -17,6 +17,7 @@
 body {
   font-family: var(--primary-font);
   font-size: 14px;
+
   color: var(--primary-text-color);
   background-color: var(--background-color);
 }
@@ -29,7 +30,7 @@ body {
   text-decoration: none;
 }
 
-/* COMPONENTS */
+/* =========================== COMPONENTS =========================== */
 
 .logo {
   font-family: var(--secondary-font);
@@ -37,6 +38,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
   color: inherit;
 }
 
@@ -49,11 +51,20 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+
   color: var(--primary-text-color-theme-dark);
   background-color: var(--accent-color);
 }
 
-/* HEADER */
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* =========================== HEADER =========================== */
 
 .menu-link,
 .auth-link {
@@ -77,9 +88,10 @@ body {
   color: var(--accent-color);
 }
 
-/* HERO */
+/* =========================== HERO =========================== */
 
 .hero {
+  text-align: center;
   background-color: var(--background-color-theme-dark);
 }
 
@@ -87,13 +99,49 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--primary-text-color-theme-dark);
 }
 
-/* FOOTER */
+/* =========================== FEATURES =========================== */
+.features .subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features .discription {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
+}
+
+/* =========================== WHAT WE ARE DOING =========================== */
+
+/* =========================== ABOUT =========================== */
+
+.team-item {
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.team .name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.team .position {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+}
+
+/* =========================== FOOTER =========================== */
 
 .page-footer {
   color: var(--primary-text-color-theme-dark);
