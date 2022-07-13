@@ -11,7 +11,7 @@
 
   --background-color: #ffffff;
   --background-color-theme-dark: #2f303a;
-  --background-color-theme-color: #f5f4fa;
+  --background-color-accent: #f5f4fa;
 }
 
 body {
@@ -54,6 +54,9 @@ body {
 
   color: var(--primary-text-color-theme-dark);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  cursor: pointer;
 }
 
 .title {
@@ -88,6 +91,10 @@ body {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 /* =========================== HERO =========================== */
 
 .hero {
@@ -114,21 +121,28 @@ body {
   text-transform: uppercase;
 }
 
-.features .discription {
+.features .description {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
 }
 
-/* =========================== WHAT WE ARE DOING =========================== */
+/* =========================== WHAT WE DO =========================== */
 
 /* =========================== ABOUT =========================== */
+.about {
+  background-color: var(--background-color-accent);
+}
 
 .team-item {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
+
+  background-color: var(--background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team .name {
@@ -160,4 +174,41 @@ body {
 
 .contact {
   color: var(--secondary-text-color-theme-dark);
+}
+
+/* =========================== OUR WORKS ===========================*/
+
+.filter-btn {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+  background-color: var(--background-color-accent);
+
+  cursor: pointer;
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+  color: var(--primary-text-color-theme-dark);
+  background-color: var(--accent-color);
+}
+
+.gallery .caption {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.gallery .category {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-text-color);
 }
